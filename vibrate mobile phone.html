@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <button class="button" onclick="vibrate(1000)">vibrate only one time</button>
+        <button class="button" onclick="vibratePattern()">vibrate in Nap</button>
+        <script>
+            function vibrate(ms){
+                navigator.vibrate(ms);
+
+            }
+            function vibratePattern(){
+                navigator.vibrate([300,100,300,100,300]);
+            }
+        </script>
+
+    </body>
+
+</html>
